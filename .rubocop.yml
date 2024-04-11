@@ -1,0 +1,32 @@
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+require:
+  - rubocop-performance
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - config/**/*
+    - db/**/*
+    - javascript/**/*
+    - app/javascript/**/*
+    - bin/**/*
+    - node_modules/**/*
+    - yarn-cache/**/*
+    - Rakefile
+
+Layout/LineLength:
+  Max: 250
+Metrics/MethodLength:
+  Max: 30
+Metrics/AbcSize:
+  Max: 20
+Metrics/ParameterLists:
+  Enabled: false
+Naming/PredicateName:
+  Enabled: false
+Style/ClassMethodsDefinitions:
+  Enabled: false
+Naming/InclusiveLanguage:
+  Enabled: false
