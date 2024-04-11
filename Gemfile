@@ -76,3 +76,4 @@ end
 gem 'devise', '~> 4.9'
 
 gem 'font-awesome-sass', '~> 6.5', '>= 6.5.2'
+gem 'pg'
